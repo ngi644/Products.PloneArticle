@@ -215,7 +215,7 @@ class BaseInnerContentField(Field):
             container = None
 
         # Do nothing if value is empty and container doesn't already exist
-        if not isinstance(container, InnerContentContainer) and not value:
+        if not value:
             return
 
         # Create a new container if it doesn't already exist
